@@ -1,0 +1,172 @@
+body {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  color:rgb(67, 67, 68);
+}
+
+
+nav {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  left:-29rem;
+  position:fixed;
+  top:0;
+}
+.menu-btn {
+  background-color: none;
+
+}
+.menu-btn img{
+  height:6.5rem;
+}
+.show-menu {
+  left:0;
+}
+
+.open-nav {
+  left:0;
+}
+li + li {
+  border-top: 1px solid rgb(147, 150, 155);
+
+}
+li {
+  color:rgb(71, 73, 76);
+  padding:2rem;
+
+}
+h1 {
+  font-size: 4rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color:rgb(71, 73, 76);
+}
+ul {
+  /*
+  border-top: 1px solid red;
+  */
+  background-color: rgb(255,255,255);
+  list-style: none;
+
+}
+li {
+  font-size: 2.6rem;
+  text-align: center;
+}
+
+article {
+  display: block;
+  font-size: 2.4rem;
+  margin: 0 15%;
+  padding-top: 8rem;
+}
+
+h2 {
+  font-family:'Open Sans', sans-serif;
+  font-size:3rem;
+  margin:2rem 0;
+
+}
+article p{
+  font-family:'EB Garamond', serif;
+  font-size:2.2rem;
+  line-height:1.6;
+
+}
+
+span {
+  background: lime;
+}
+footer {
+  border-top:1px solid black;
+  border-bottom:1px solid black;
+
+  font-size: 3rem;
+  margin:2rem 10%;
+
+}
+footer svg {
+  color:black;
+  display: block;
+  height: 3rem;
+  margin: auto;
+  padding: 1rem;
+
+}
+
+.img-circle {
+
+  position:relative;
+  left:-6rem;
+  z-index:-10;
+}
+figure{
+    width:25rem;
+    height:25rem;
+    border-radius:50%;
+    overflow:hidden;
+    margin: auto;
+}
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+  body{
+
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  body{
+
+  }
+  h1{
+    padding-top: 1rem;
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+    margin:0 0 2rem 0;
+  }
+  li {
+    font-size: 1.8rem;
+    padding:1rem;
+  }
+  .menu-btn{
+    display: none;
+  }
+  header {
+    background: rgb(255,255,255);
+    position:fixed;
+    top:0;
+    width: 100%;
+  }
+  nav {
+    display: block;
+    position:static;
+  }
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  li + li {
+    border: none;
+  }
+  .main{
+    padding-top: 10rem;
+  }
+  article{
+    padding-bottom: 6.6rem;
+    padding-top: 9rem;
+  }
+  .border{
+    border-bottom: 1px solid rgb(147, 150, 155);
+  }
+  article p{
+    font-family:'EB Garamond', serif;
+    font-size:1.6rem;
+    line-height:1.6;
+    columns: 2;
+  }
+}
