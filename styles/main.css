@@ -4,8 +4,21 @@ body {
   padding: 0;
   color:rgb(67, 67, 68);
 }
-
-
+.hamburger-container {
+  background:white;
+  height:6.5rem;
+  width: 6.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.ham-line{
+  background:rgb(220, 223, 229);
+  height:4.5%;
+  width:40%;
+  margin:0.4rem 0;
+}
 nav {
   display: flex;
   font-family: 'Open Sans', sans-serif;
