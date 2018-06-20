@@ -7,8 +7,8 @@ body {
 }
 .hamburger-container {
   background:white;
-  height:9.6rem;
-  width: 9.6rem;
+  height:9.4rem;
+  width: 9.4rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -23,10 +23,10 @@ body {
 nav {
   display: flex;
   font-family: 'Open Sans', sans-serif;
-  left:-28rem;
+  left:-27rem;
   position:fixed;
   top:0;
-  transition: left 1s ease-in-out;
+  transition: left 0.5s ease-in-out;
 }
 .menu-btn {
   background-color: none;
@@ -46,7 +46,7 @@ li + li {
 }
 li {
   color:rgb(71, 73, 76);
-  padding:3.5rem 1rem;
+  padding:3.4rem 1rem;
   font-size: 2.6rem;
   text-align: center;
 
@@ -83,7 +83,7 @@ article p{
   font-family:'EB Garamond', serif;
   font-size:2.5rem;
   line-height:1.6;
-
+  padding-bottom: 8rem;
 }
 
 span {
@@ -117,6 +117,9 @@ figure{
     border-radius:50%;
     overflow:hidden;
     margin: auto;
+}
+.border{
+  border-bottom: 1px solid rgb(147, 150, 155);
 }
 @media only screen and (min-width: 768px) and (max-width:1024px) {
   body{
