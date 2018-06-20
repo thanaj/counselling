@@ -3,11 +3,12 @@ body {
   margin: 0;
   padding: 0;
   color:rgb(67, 67, 68);
+  scroll-behavior: smooth;
 }
 .hamburger-container {
   background:white;
-  height:6.5rem;
-  width: 6.5rem;
+  height:9.6rem;
+  width: 9.6rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -22,17 +23,16 @@ body {
 nav {
   display: flex;
   font-family: 'Open Sans', sans-serif;
-  left:-29rem;
+  left:-28rem;
   position:fixed;
   top:0;
+  transition: left 1s ease-in-out;
 }
 .menu-btn {
   background-color: none;
 
 }
-.menu-btn img{
-  height:6.5rem;
-}
+
 .show-menu {
   left:0;
 }
@@ -46,7 +46,9 @@ li + li {
 }
 li {
   color:rgb(71, 73, 76);
-  padding:2rem;
+  padding:3.5rem 1rem;
+  font-size: 2.6rem;
+  text-align: center;
 
 }
 h1 {
@@ -59,16 +61,9 @@ a {
   color:rgb(71, 73, 76);
 }
 ul {
-  /*
-  border-top: 1px solid red;
-  */
   background-color: rgb(255,255,255);
   list-style: none;
 
-}
-li {
-  font-size: 2.6rem;
-  text-align: center;
 }
 
 article {
@@ -80,13 +75,13 @@ article {
 
 h2 {
   font-family:'Open Sans', sans-serif;
-  font-size:3rem;
+  font-size:3.3rem;
   margin:2rem 0;
 
 }
 article p{
   font-family:'EB Garamond', serif;
-  font-size:2.2rem;
+  font-size:2.5rem;
   line-height:1.6;
 
 }
@@ -112,7 +107,6 @@ footer svg {
 }
 
 .img-circle {
-
   position:relative;
   left:-6rem;
   z-index:-10;
