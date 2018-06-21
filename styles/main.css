@@ -26,7 +26,7 @@ nav {
   left:-27rem;
   position:fixed;
   top:0;
-  transition: left 0.5s ease-in-out;
+  transition: left 0.3s ease-in-out;
 }
 .menu-btn {
   background-color: none;
