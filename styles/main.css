@@ -77,8 +77,8 @@ h2 {
   font-family:'Open Sans', sans-serif;
   font-size:3.3rem;
   margin:2rem 0;
-
 }
+
 article p{
   font-family:'EB Garamond', serif;
   font-size:2.5rem;
@@ -92,10 +92,9 @@ span {
 footer {
   border-top:1px solid black;
   border-bottom:1px solid black;
-
   font-size: 3rem;
-  margin:2rem 10%;
-
+  margin:2rem 15%;
+  padding:8rem 0;
 }
 footer svg {
   color:black;
@@ -120,6 +119,20 @@ figure{
 }
 .border{
   border-bottom: 1px solid rgb(147, 150, 155);
+}
+.map-container{
+  width:100%;
+}
+iframe{
+  width: 100%;
+}
+.contact-container{
+  font-size:2.4rem;
+}
+.contact-detail a, .contact-detail p{
+  display: block;
+  padding: 2rem 0;
+  text-align: center;
 }
 @media only screen and (min-width: 768px) and (max-width:1024px) {
   body{
@@ -179,4 +192,19 @@ figure{
     line-height:1.6;
     columns: 2;
   }
+  .contact-container {
+    display: flex;
+    align-items: center;
+  }
+  .map-container{
+    width:50%;
+  }
+  iframe{
+    width:80%;
+    margin:0 5%;
+  }
+  .contact-detail a, .contact-detail p{
+    text-align: left;
+  }
+
 }
