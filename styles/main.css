@@ -23,7 +23,7 @@ body {
 nav {
   display: flex;
   font-family: 'Open Sans', sans-serif;
-  left:-27rem;
+  left:-23rem;
   position:fixed;
   top:0;
   transition: left 0.3s ease-in-out;
@@ -39,6 +39,14 @@ nav {
 
 .open-nav {
   left:0;
+}
+.name-logo {
+
+  width:100%;
+  margin: 0 15%;
+}
+.name-logo img{
+  width: 70%;
 }
 li + li {
   border-top: 1px solid rgb(147, 150, 155);
@@ -110,7 +118,7 @@ footer svg {
   left:-6rem;
   z-index:-10;
 }
-figure{
+.personal-img{
     width:25rem;
     height:25rem;
     border-radius:50%;
@@ -134,6 +142,41 @@ iframe{
   padding: 2rem 0;
   text-align: center;
 }
+
+.alternative {
+  border-bottom: 0.1rem solid #3F7F96;
+  color:white;
+  font-family:'Open Sans', sans-serif;
+  font-size:3rem;
+  margin:0 15%;
+  padding-bottom: 2rem;
+ }
+ .alternative-name {
+   background: linear-gradient(to right, #3F7F96, #959793);
+   /*
+   border-radius:0 10rem 0 0 ;
+   */
+   text-transform: uppercase;
+   padding: 1rem 2rem;
+   /*
+   -webkit-clip-path: polygon(74% 13%, 83% 30%, 90% 50%, 96% 76%, 100% 100%, 57% 100%, 0 100%, 0 0, 63% 0);
+   clip-path: polygon(74% 13%, 83% 30%, 90% 50%, 96% 76%, 100% 100%, 57% 100%, 0 100%, 0 0, 63% 0);
+-webkit-clip-path: inset(0 0 0 0  round 0 70% 0 0);
+  */
+  /*
+  -webkit-clip-path: polygon(68% 0, 87% 34%, 100% 100%, 0 100%, 0 0);
+
+  clip-path: inset(0 0 0 0 round 0 75% 0 0);
+*/
+
+ }
+ .alternative-occup {
+   background: white;
+   color: #3F7F96;
+   font-style: italic;
+   font-size: 2.4rem;
+   font-weight:100;
+ }
 @media only screen and (min-width: 768px) and (max-width:1024px) {
   body{
 
@@ -171,17 +214,22 @@ iframe{
   }
   ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-left: 15%;
   }
   li + li {
     border: none;
   }
   .main{
-    padding-top: 10rem;
+    padding-top: 16rem;
+
+  }
+  .personal-img {
+    margin-bottom: 3rem;
   }
   article{
-    padding-bottom: 6.6rem;
-    padding-top: 9rem;
+    
+    padding-top: 15rem;
   }
   .border{
     border-bottom: 1px solid rgb(147, 150, 155);
@@ -206,5 +254,7 @@ iframe{
   .contact-detail a, .contact-detail p{
     text-align: left;
   }
-
+  .name-logo img{
+    max-width: 100%;
+  }
 }
