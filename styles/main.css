@@ -41,12 +41,11 @@ nav {
   left:0;
 }
 .name-logo {
-
-  width:100%;
   margin: 0 15%;
+  width:100%;
 }
 .name-logo img{
-  width: 70%;
+  width: 100%;
 }
 li + li {
   border-top: 1px solid rgb(147, 150, 155);
@@ -228,7 +227,7 @@ iframe{
     margin-bottom: 3rem;
   }
   article{
-    
+
     padding-top: 15rem;
   }
   .border{
