@@ -1,5 +1,8 @@
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
 body {
-  font-size: 10px;
   margin: 0;
   padding: 0;
   color:rgb(67, 67, 68);
@@ -7,8 +10,8 @@ body {
 }
 .hamburger-container {
   background:white;
-  height:9.4rem;
-  width: 9.4rem;
+  height:6rem;
+  width: 5rem;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -16,37 +19,32 @@ body {
 }
 .ham-line{
   background:rgb(220, 223, 229);
-  height:4.5%;
-  width:40%;
-  margin:0.4rem 0;
+  height:10%;
+  width:60%;
+  margin:0.3rem 0;
 }
 nav {
   display: flex;
   font-family: 'Open Sans', sans-serif;
-  left:-23rem;
+  left:-22.5rem;
   position:fixed;
   top:0;
   transition: left 0.3s ease-in-out;
 }
 .menu-btn {
   background-color: none;
-
 }
 
 .show-menu {
   left:0;
 }
 
-.open-nav {
-  left:0;
-}
 .name-logo {
-
   width:100%;
-  margin: 0 15%;
+  margin: 0 0 0 15%;
 }
 .name-logo img{
-  width: 70%;
+  width: 85%;
 }
 li + li {
   border-top: 1px solid rgb(147, 150, 155);
@@ -54,16 +52,18 @@ li + li {
 }
 li {
   color:rgb(71, 73, 76);
-  padding:3.4rem 1rem;
+  padding:1.9rem 1rem;
   font-size: 2.6rem;
   text-align: center;
 
 }
+  /*
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-top: 1.5rem;
   text-align: center;
 }
+*/
 a {
   text-decoration: none;
   color:rgb(71, 73, 76);
@@ -73,58 +73,55 @@ ul {
   list-style: none;
 
 }
-
+main {
+  display: block;
+  margin:0 15%;
+}
 article {
   display: block;
-  font-size: 2.4rem;
-  margin: 0 15%;
-  padding-top: 8rem;
+  /*margin: 0 15%;*/
+  padding: 0 0 3rem 0;
 }
 
 h2 {
   font-family:'Open Sans', sans-serif;
-  font-size:3.3rem;
-  margin:2rem 0;
+  font-size:2.2rem;
+  font-weight: bold;
+  margin: 3rem 0;
 }
 
 article p{
   font-family:'EB Garamond', serif;
-  font-size:2.5rem;
+  font-size:2rem;
   line-height:1.6;
-  padding-bottom: 8rem;
 }
-
 span {
   background: lime;
 }
+
 footer {
+  margin:0 15%;
   border-top:1px solid black;
   border-bottom:1px solid black;
-  font-size: 3rem;
-  margin:2rem 15%;
-  padding:8rem 0;
-}
-footer svg {
-  color:black;
-  display: block;
-  height: 3rem;
-  margin: auto;
-  padding: 1rem;
-
+  font-size: 2rem;
 }
 
-.img-circle {
-  position:relative;
-  left:-6rem;
-  z-index:-10;
-}
+
 .personal-img{
-    width:25rem;
-    height:25rem;
+    display: block;
+    width:13rem;
+    height:13rem;
     border-radius:50%;
     overflow:hidden;
-    margin: auto;
+    margin: 2rem auto;
 }
+.img-circle {
+  position:relative;
+  left:-2.5rem;
+  width:20rem;
+  z-index: -1;
+}
+
 .border{
   border-bottom: 1px solid rgb(147, 150, 155);
 }
@@ -143,40 +140,6 @@ iframe{
   text-align: center;
 }
 
-.alternative {
-  border-bottom: 0.1rem solid #3F7F96;
-  color:white;
-  font-family:'Open Sans', sans-serif;
-  font-size:3rem;
-  margin:0 15%;
-  padding-bottom: 2rem;
- }
- .alternative-name {
-   background: linear-gradient(to right, #3F7F96, #959793);
-   /*
-   border-radius:0 10rem 0 0 ;
-   */
-   text-transform: uppercase;
-   padding: 1rem 2rem;
-   /*
-   -webkit-clip-path: polygon(74% 13%, 83% 30%, 90% 50%, 96% 76%, 100% 100%, 57% 100%, 0 100%, 0 0, 63% 0);
-   clip-path: polygon(74% 13%, 83% 30%, 90% 50%, 96% 76%, 100% 100%, 57% 100%, 0 100%, 0 0, 63% 0);
--webkit-clip-path: inset(0 0 0 0  round 0 70% 0 0);
-  */
-  /*
-  -webkit-clip-path: polygon(68% 0, 87% 34%, 100% 100%, 0 100%, 0 0);
-
-  clip-path: inset(0 0 0 0 round 0 75% 0 0);
-*/
-
- }
- .alternative-occup {
-   background: white;
-   color: #3F7F96;
-   font-style: italic;
-   font-size: 2.4rem;
-   font-weight:100;
- }
 @media only screen and (min-width: 768px) and (max-width:1024px) {
   body{
 
@@ -187,16 +150,19 @@ iframe{
   body{
 
   }
+  /*
   h1{
     padding-top: 1rem;
     font-size: 3rem;
   }
+  */
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     margin:0 0 2rem 0;
   }
+
   li {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     padding:1rem;
   }
   .menu-btn{
@@ -206,7 +172,15 @@ iframe{
     background: rgb(255,255,255);
     position:fixed;
     top:0;
-    width: 100%;
+    width: 70%;
+    margin: 0 15%;
+  }
+  .name-logo {
+    margin: 0;
+    padding: 0;
+  }
+  .name-logo img {
+    width:100%;
   }
   nav {
     display: block;
@@ -215,20 +189,21 @@ iframe{
   ul {
     display: flex;
     justify-content: flex-start;
-    margin-left: 15%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
   }
   li + li {
     border: none;
   }
   .main{
-    padding-top: 16rem;
+    padding-top: 24rem;
 
   }
   .personal-img {
     margin-bottom: 3rem;
   }
   article{
-    
+
     padding-top: 15rem;
   }
   .border{
