@@ -164,9 +164,6 @@ iframe{
   }
   header {
     background: rgb(255,255,255);
-    /*position:fixed;
-    top:0;
-    */
     width: 70%;
     max-width: 1500px;
     margin: 0 15%;
