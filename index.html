@@ -11,26 +11,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-  <header>
-      <figure class="name-logo">
+  <header data-target="header" class="" id="main">
+      <figure class="name-logo" data-target="name-logo">
         <img src="images/logo-header-4.jpg" alt="">
       </figure>
 
     <nav data-target="nav">
       <ul data-target="menu-list">
-        <li data-target="menu-item">
+        <li data-target="menu-item" data-target-nav="menu-item-witaj">
           <a href="#main">Witaj</a>
         </li>
-        <li data-target="menu-item">
+        <li data-target="menu-item" data-target-nav="menu-item-not-witaj">
           <a href="#about">O mnie</a>
         </li>
-        <li data-target="menu-item">
+        <li data-target="menu-item" data-target-nav="menu-item-not-witaj">
           <a href="#services">Obszary pomocy</a>
         </li>
-        <li data-target="menu-item">
+        <li data-target="menu-item" data-target-nav="menu-item-not-witaj">
           <a href="#therapy">Terapia</a>
         </li>
-        <li data-target="menu-item">
+        <li data-target="menu-item" data-target-nav="menu-item-not-witaj">
           <a href="#contact">Kontakt</a>
         </li>
       </ul>
@@ -46,7 +46,7 @@
     </nav>
   </header>
   <main>
-    <article class="main border" data-target="main" id="main">
+    <article class="main border" data-target="main" >
       <figure class="personal-img">
         <img src="images/praireDog_4_small.jpg" alt="" class="img-circle">
       </figure>

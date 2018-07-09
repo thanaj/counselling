@@ -8,8 +8,12 @@ body {
   color:rgb(67, 67, 68);
   scroll-behavior: smooth;
 }
+}
+header figure{
+  width:4rem;
+}
 .hamburger-container {
-  background:white;
+  /*background:white;*/
   height:6rem;
   width: 5rem;
   display: flex;
@@ -41,10 +45,11 @@ nav {
 
 .name-logo {
   width:100%;
-  margin: 0 0 0 15%;
+  margin: 0 0 0 5%;
+
 }
 .name-logo img{
-  width: 85%;
+  width: 100%;
 }
 li + li {
   border-top: 1px solid rgb(147, 150, 155);
@@ -57,13 +62,7 @@ li {
   text-align: center;
 
 }
-  /*
-h1 {
-  font-size: 3rem;
-  padding-top: 1.5rem;
-  text-align: center;
-}
-*/
+
 a {
   text-decoration: none;
   color:rgb(71, 73, 76);
@@ -75,7 +74,7 @@ ul {
 }
 main {
   display: block;
-  margin:0 15%;
+  margin:0 5% ;
 }
 article {
   display: block;
@@ -150,12 +149,7 @@ iframe{
   body{
 
   }
-  /*
-  h1{
-    padding-top: 1rem;
-    font-size: 3rem;
-  }
-  */
+
   h2 {
     font-size: 2.8rem;
     margin:0 0 2rem 0;
@@ -170,9 +164,11 @@ iframe{
   }
   header {
     background: rgb(255,255,255);
-    position:fixed;
+    /*position:fixed;
     top:0;
+    */
     width: 70%;
+    max-width: 1500px;
     margin: 0 15%;
   }
   .name-logo {
@@ -185,19 +181,26 @@ iframe{
   nav {
     display: block;
     position:static;
+    overflow: hidden;
+    transition: none;
   }
   ul {
     display: flex;
     justify-content: flex-start;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgb(147, 150, 155);
+    border-bottom: 1px solid rgb(147, 150, 155);
   }
   li + li {
     border: none;
   }
+  main {
+    width:70%;
+    max-width:1500px;
+    margin:auto;
+  }
   .main{
-    padding-top: 24rem;
-
+    /*padding-top: 24rem;
+    */
   }
   .personal-img {
     margin-bottom: 3rem;
@@ -207,11 +210,11 @@ iframe{
     padding-top: 15rem;
   }
   .border{
-    border-bottom: 1px solid rgb(147, 150, 155);
+    border-bottom: 0.2rem solid rgb(147, 150, 155);
   }
   article p{
     font-family:'EB Garamond', serif;
-    font-size:1.6rem;
+    font-size:2.2rem;
     line-height:1.6;
     columns: 2;
   }
@@ -232,4 +235,26 @@ iframe{
   .name-logo img{
     max-width: 100%;
   }
+  /*
+  .hidden-header {
+    position:fixed;
+    top:0;
+    left:15%;
+  }
+  */
+  footer {
+    padding-bottom: 15rem;
+    padding-top:10rem;
+
+  }
+  .sticky {
+    background-color: #3F7F96;
+    color:red;
+    position: fixed;
+    left:15%;
+    top: -0.2rem;
+    width:70%;
+    margin: auto;
+  }
+
 }
